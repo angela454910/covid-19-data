@@ -36,7 +36,7 @@ class App extends React.Component {
     const { data, isLoading, country } = this.state;
     return (
       <div className={styles.container}>
-        <img src={headerImg} className={styles.img} alt="Header Image" />
+        <img src={headerImg} className={styles.img} alt="Header" />
         <Cards data={data} isLoading={isLoading} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
